@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1001,
+    "title": "Login Issue - Cannot access account",
+    "description": "Customer is unable to login to their account. They have tried resetting their password, but the email link expires immediately.",
+    "customer": "John Smith",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "2024-01-15"
+  },
+  {
+    "id": 1002,
+    "title": "Payment Failure on Checkout",
+    "description": "User is getting a 404 error when clicking the 'Complete Purchase' button on the mobile app.",
+    "customer": "Sarah Jenkins",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2024-01-16"
+  },
+  {
+    "id": 1003,
+    "title": "Update Billing Address",
+    "description": "Request to change the corporate billing address for the upcoming Q1 invoice.",
+    "customer": "Robert Chen",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2024-01-16"
+  },
+  {
+    "id": 1004,
+    "title": "Slow Dashboard Loading",
+    "description": "The analytics dashboard is taking more than 10 seconds to render for users with large datasets.",
+    "customer": "Emily Davis",
+    "priority": "Medium",
+    "status": "In-Progress",
+    "createdAt": "2024-01-17"
+  },
+  {
+    "id": 1005,
+    "title": "API Documentation Typo",
+    "description": "The endpoint for /v1/users/auth is documented incorrectly in the developer portal.",
+    "customer": "Michael Brown",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2024-01-17"
+  },
+  {
+    "id": 1006,
+    "title": "Broken Image Links in Blog",
+    "description": "Several images in the latest blog post are appearing as broken icons on Safari browsers.",
+    "customer": "Jessica Wilson",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2024-01-18"
+  },
+  {
+    "id": 1007,
+    "title": "Feature Request: Dark Mode",
+    "description": "A high-priority enterprise client is requesting a native dark mode for the desktop application.",
+    "customer": "Global Tech Corp",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-01-18"
+  },
+  {
+    "id": 1008,
+    "title": "Subscription Cancellation",
+    "description": "Customer wants to cancel their premium subscription before the next billing cycle on the 20th.",
+    "customer": "Kevin Adams",
+    "priority": "High",
+    "status": "In-Progress",
+    "createdAt": "2024-01-19"
+  },
+  {
+    "id": 1009,
+    "title": "Data Export Failure",
+    "description": "Attempting to export a CSV of the last 30 days results in a server timeout error.",
+    "customer": "Amanda Lee",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2024-01-19"
+  },
+  {
+    "id": 1010,
+    "title": "Mobile App Crashing on iOS 17",
+    "description": "Users reporting immediate crashes upon opening the app after the latest OS update.",
+    "customer": "David Miller",
+    "priority": "Critical",
+    "status": "In-Progress",
+    "createdAt": "2024-01-20"
+  },
+  {
+    "id": 1011,
+    "title": "Password Reset Email Delay",
+    "description": "Emails are taking up to 30 minutes to arrive in the inbox for Gmail users.",
+    "customer": "Laura Garcia",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2024-01-20"
+  },
+  {
+    "id": 1012,
+    "title": "Refund Status Inquiry",
+    "description": "Customer is checking on the status of a refund initiated on Jan 10th.",
+    "customer": "Chris Thompson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2024-01-21"
+  }
+]
