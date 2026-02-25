@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Banner = () => {
+const Banner = ({inProgressTotal}) => {
     return (
 
         // banner section , here i am trying to maintain the design combination in a professsioanl dashboard looking design  with my navbar.....
@@ -8,7 +8,7 @@ const Banner = () => {
 
 
         <div className="container mx-auto px-4 mt-8">
-  <div className="bg-base-100/50 backdrop-blur-md border border-base-200 shadow-xl rounded-3xl p-8 lg:p-12 overflow-hidden relative">
+  <div className="bg-base-100/50 backdrop-blur-md border border-base-200 shadow-xl rounded-3xl p-8 lg:p-6 overflow-hidden relative">
     
     
     <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#3E16CF]/5 rounded-full blur-3xl"></div>
@@ -45,7 +45,7 @@ const Banner = () => {
           </div>
           <div>
             <p className="text-sm font-bold text-base-content/50 uppercase tracking-wider">In-Progress</p>
-            <h3 className="text-3xl font-black">0</h3>
+            <h3 className="text-3xl font-black">{inProgressTotal}</h3>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ const Banner = () => {
         {/* resolved part */}
 
 
-        
+
         <div className="group flex items-center gap-6 bg-white dark:bg-base-200/50 p-6 rounded-2xl border border-base-200 shadow-sm hover:shadow-md transition-all duration-300 w-full lg:w-64">
           <div className="p-4 rounded-xl bg-[#54CF68]/10 text-[#54CF68] group-hover:bg-[#54CF68] group-hover:text-white transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -71,6 +71,8 @@ const Banner = () => {
     </div>
   </div>
 </div>
+
+
     );
 };
 

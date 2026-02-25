@@ -23,7 +23,7 @@
     "description": "Request to change the corporate billing address for the upcoming Q1 invoice.",
     "customer": "Robert Chen",
     "priority": "Low",
-    "status": "Resolved",
+    "status": "In-Progress",
     "createdAt": "2024-01-16"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Several images in the latest blog post are appearing as broken icons on Safari browsers.",
     "customer": "Jessica Wilson",
     "priority": "Medium",
-    "status": "Resolved",
+    "status": "In-Progress",
     "createdAt": "2024-01-18"
   },
   {
@@ -95,7 +95,7 @@
     "description": "Emails are taking up to 30 minutes to arrive in the inbox for Gmail users.",
     "customer": "Laura Garcia",
     "priority": "Medium",
-    "status": "Resolved",
+    "status": "In-Progress",
     "createdAt": "2024-01-20"
   },
   {
