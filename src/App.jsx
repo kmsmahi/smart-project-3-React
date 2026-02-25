@@ -2,6 +2,8 @@ import { Suspense } from "react";
 import Banner from "./assets/components/banner/banner"
 import MainSection from "./assets/components/mainSection/MainSection"
 import Navbar from "./assets/components/navbar/navbar"
+import { ToastContainer } from "react-toastify";
+import Footer from "./assets/components/Footer/Footer";
 const api=async()=>{
     const res=await(fetch('/public/ticket.json'));
     return res.json();
@@ -15,6 +17,8 @@ function App() {
       <Suspense fallback={<div className="text-center mt-12 text-lg font-medium text-base-content/50">Loading...</div>}>
         <MainSection fetchPromise={fetchPromise}></MainSection>
       </Suspense>
+      <ToastContainer></ToastContainer>
+      <Footer></Footer>
       
     </>
   )
