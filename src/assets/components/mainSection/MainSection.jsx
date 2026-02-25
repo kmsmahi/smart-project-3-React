@@ -2,9 +2,12 @@ import React, { use, useState } from 'react';
 import Banner from '../banner/banner';
 import AllTickets from '../cards/AllTickets';
 import InProgress from '../cards/InProgress';
+import Resolved from '../cards/Resolved';
 const MainSection = ({fetchPromise}) => {
     const allTickets=use(fetchPromise);
+    const [tickets,setTickets]=useState(allTickets);
     const [ticketStatus,setTicketStatus]=useState([]);
+    const [resolvedStatus,setResolvedStatus]=useState([]);
     const handleTickets=(ticket)=>{
             console.log(ticket);
             const isExist=ticketStatus.find(item=>item.id===ticket.id);
@@ -16,11 +19,25 @@ const MainSection = ({fetchPromise}) => {
             setTicketStatus(taskStatusDiv);
         };
         console.log(ticketStatus);
+
+        const completeBtnHandler=(ticket)=>{
+        const newResolved=[...resolvedStatus,ticket];
+            setResolvedStatus(newResolved);
+            const progressRemaining=ticketStatus.filter(item=>item.id!==ticket.id);
+            setTicketStatus(progressRemaining);
+            const ticketsRemaining=tickets.filter(item=>item.id!==ticket.id);
+            setTickets(ticketsRemaining);
+
+        
+    }
+    // console.log(resolvedStatus);
+
+        
         
     return (
         
         <div>
-            <Banner inProgressTotal={ticketStatus.length}></Banner>
+            <Banner inProgressTotal={ticketStatus.length} resolvedTotal={resolvedStatus.length}></Banner>
             <section className='container bg-[#E0E7FF] grid grid-cols-12 gap-6 mt-8 p-10 rounded-3xl border border-base-200 shadow-xl'>
 
             <div className='col-span-9'>
@@ -31,7 +48,7 @@ const MainSection = ({fetchPromise}) => {
     <span className="badge badge-ghost font-bold">{allTickets.length} Total</span>
   </div>
   <div className='grid grid-cols-1 xl:grid-cols-2 gap-6'>
-    {allTickets.map(ticket => {
+    {tickets.map(ticket => {
 
       return (
         <AllTickets key={ticket.id} handleTickets={handleTickets} ticket={ticket}></AllTickets>
@@ -49,7 +66,7 @@ const MainSection = ({fetchPromise}) => {
                     <div className='p-2 rounded-2xl mt-6 mb-8 space-y-5'>
                         {
                            ticketStatus.map(ticket=>
-                            <InProgress key={ticket.id} ticket={ticket}></InProgress>
+                            <InProgress key={ticket.id} ticket={ticket} completeBtnHandler={completeBtnHandler}></InProgress>
                            ) 
                         }
                         
@@ -58,11 +75,14 @@ const MainSection = ({fetchPromise}) => {
                 <div>
                     <h1 className="text-2xl font-black tracking-tight text-base-content">
       Resolved <span className="text-[#3E16CF]">Tasks</span></h1>
-                    <div>
-                    <div className='shadow p-10 bg-base-100 rounded-2xl mt-4 mb-8'>
+                    <div className='p-2 rounded-2xl mt-6 mb-8 space-y-5'>
+                        {
+                            resolvedStatus.map(ticket=>
+                                <Resolved key={ticket.id} ticket={ticket} ></Resolved>
+                            )
+                        }
                         
                     </div>
-                </div>
                 </div>
             </div>
             

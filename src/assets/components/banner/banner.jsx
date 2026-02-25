@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Banner = ({inProgressTotal}) => {
+const Banner = ({inProgressTotal,resolvedTotal}) => {
     return (
 
         // banner section , here i am trying to maintain the design combination in a professsioanl dashboard looking design  with my navbar.....
@@ -63,7 +63,7 @@ const Banner = ({inProgressTotal}) => {
           </div>
           <div>
             <p className="text-sm font-bold text-base-content/50 uppercase tracking-wider">Resolved</p>
-            <h3 className="text-3xl font-black">0</h3>
+            <h3 className="text-3xl font-black">{resolvedTotal}</h3>
           </div>
         </div>
 

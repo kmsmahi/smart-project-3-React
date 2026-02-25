@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const InProgress = ({ticket}) => {
+const InProgress = ({ticket,completeBtnHandler}) => {
     return (
         <div className="group relative bg-base-100 border border-base-200 rounded-2xl p-5 transition-all duration-300 hover:shadow-xl hover:shadow-indigo-50/50 hover:border-[#3E16CF]/30 overflow-hidden space-y-4">
   
@@ -34,7 +34,7 @@ const InProgress = ({ticket}) => {
         </div>
       </div>
 
-      <button className="btn btn-sm bg-[#3E16CF] hover:bg-[#2d109b] text-white border-none rounded-lg px-4 normal-case shadow-md shadow-indigo-100 active:scale-95 transition-all">
+      <button onClick={()=>completeBtnHandler(ticket)} className="btn btn-sm bg-[#3E16CF] hover:bg-[#2d109b] text-white border-none rounded-lg px-4 normal-case shadow-md shadow-indigo-100 active:scale-95 transition-all">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
         </svg>
