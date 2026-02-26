@@ -5,7 +5,7 @@ import Navbar from "./assets/components/navbar/navbar"
 import { ToastContainer } from "react-toastify";
 import Footer from "./assets/components/Footer/Footer";
 const api=async()=>{
-    const res=await(fetch('/public/ticket.json'));
+    const res=await(fetch('/ticket.json'));
     return res.json();
 }
 function App() {

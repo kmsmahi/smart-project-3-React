@@ -43,7 +43,7 @@ const MainSection = ({fetchPromise}) => {
             <section className='container mx-auto bg-[#E0E7FF]/30 grid grid-cols-1 lg:grid-cols-12 gap-8 mt-8 p-4 md:p-10 rounded-3xl border border-base-200 shadow-xl'>
                 
                 <div className='col-span-1 lg:col-span-9'>
-                    <div className="flex justify-between items-center mb-6 px-4">
+                    <div className="flex justify-between items-center mb-6 px-2">
                         <h1 className="text-2xl font-black tracking-tight text-base-content">
                             Customer <span className="text-[#3E16CF]">Tickets</span>
                         </h1>

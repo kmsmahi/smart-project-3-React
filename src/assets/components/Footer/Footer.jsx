@@ -40,8 +40,8 @@ const Footer = () => {
         <h6 className="text-white font-bold uppercase tracking-widest text-xs">Services</h6>
         <nav className="flex flex-col gap-3 text-sm">
           <a className="hover:text-[#3E16CF] transition-colors">Branding</a>
-          <a className="hover:text-[#3E16CF] transition-colors">Design</a>
-          <a className="hover:text-[#3E16CF] transition-colors">Marketing</a>
+          <a className="hover:text-[#3E16CF] transition-colors">Customer stories</a>
+          <a className="hover:text-[#3E16CF] transition-colors">Download apps</a>
         </nav>
       </div>
 
